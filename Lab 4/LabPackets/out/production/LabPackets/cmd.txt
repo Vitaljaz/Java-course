@@ -1,0 +1,1 @@
+jar cfe graphclasses.jar ru.novsu.povt.sva.Main ru
