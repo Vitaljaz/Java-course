@@ -24,7 +24,7 @@
     		text-align: center;
 		}
 		
-		form {
+		#buttons {
     		display: table;
     		margin: auto;
 		}
@@ -43,10 +43,10 @@
 		<h2>Welcome to admin panel!</h2>
 		<h3>Choose what you want to do:</h3>
 		
-		<form action = "AdminAction" method = "post">
-			<button type = "submit" name = "button" value = "list">Show users list</button>
-			<button type = "submit" name = "button" value = "add">Add new user</button>
-		</form>
+		<div id = "buttons">
+			<button onclick = "location.href='/list'">Show users list</button>
+			<button onclick = "location.href='/add'">Add new user</button>		
+		</div>
 		
 	</body>
 </html>
