@@ -5,7 +5,7 @@ import java.util.List;
 
 public class UserDB {
 	private static UserDB instance = null;
-	
+
 	private List<User> users;
 	
 	private UserDB() {
@@ -33,5 +33,9 @@ public class UserDB {
 	
 	public List<User> getList() {
 		return users;
+	}
+	
+	public boolean isEmpty() {
+		return users.isEmpty();
 	}
 }
